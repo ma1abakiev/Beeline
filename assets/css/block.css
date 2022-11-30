@@ -1,0 +1,19 @@
+.btn {
+  padding: 1rem 2.4rem;
+
+  border: none;
+  border-radius: .8rem;
+
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 144%;
+  color: #000;
+
+  background: linear-gradient(51.04deg, #f90 1.52%, #ffcd00 97.06%);
+  cursor: pointer;
+}
+
+.hr {
+  height: .1rem;
+  background-color: rgba(255, 255, 255, .05);
+}

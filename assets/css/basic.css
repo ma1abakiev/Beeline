@@ -1,0 +1,24 @@
+:root{
+  --primary-color: #FFCD00;
+  --second-color: #1A143B;
+  --light-color: #fff;
+  --dark-color: #000;
+  --grey-color: #E8E8E8;
+}
+*{
+  margin: 0rem;
+  padding: 0rem;
+  box-sizing: border-box;
+  font-family: 'Fira Sans', sans-serif;
+}
+html{
+  font-size: 62.5%;
+}
+body{
+  background-color: var(--second-color);
+  font-size: 1rem;
+}
+.container{
+  max-width: 117.6rem;
+  margin: 0 auto;
+}
