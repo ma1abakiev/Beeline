@@ -1,7 +1,10 @@
+.adaptiv {
+  display: none;
+}
 .visible {
   display: block;
 }
-.adaptiv {
+.hide {
   display: none;
 }
 .btn {
@@ -24,16 +27,93 @@
   right: 2rem;
   cursor: pointer;
 }
-@media screen and (min-width: 320px) and (max-width: 768px) {
+
+.wa-wrap {
+  position: relative;
+  width: 100%;
+}
+
+.wa-block {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: 9999;
+}
+
+.wa-whatsapp-icon {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.wa-help-icon {
+  visibility: visible;
+  position: absolute;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+
+.wa-close-icon {
+  visibility: hidden;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+
+.wa-show .wa-whatsapp-icon {
+  bottom: 75px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.wa-show .wa-help-icon {
+  visibility: hidden;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.wa-show .wa-close-icon {
+  visibility: visible;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.wa-hide {
+  z-index: 1;
+}
+
+@media (max-width: 770px) {
+  .wa-block {
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .wa-block img {
+    width: 52px;
+    height: 52px;
+  }
+
+  .wa-show .wa-whatsapp-icon {
+    bottom: 63px;
+  }
+}
+
+
+
+
+
+@media screen and (min-width: 320px) and (max-width: 1024px) {
   html { 
     font-size: 5px;
   }
   section {
     padding: 0 4rem;
   }
-  /* .container {
-    max-width: 60rem;
-  } */
+  
   .btn {
     padding: 1.5rem 3.2rem;
     font-size: 2.5rem;
@@ -44,6 +124,8 @@
   /* Adaptiv */
 
   .adaptiv {
+    float: right;
+    width: 100%;
     padding-top: 3rem;
 
     height: 100vh;
@@ -96,11 +178,14 @@
   }
   .adaptiv__search-bar {
     margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    margin-left: -5rem;
   }
   .adaptiv__search-box {
     position: relative;
-    left: 2.6rem;
-    top: 7.5rem;
+    left: 7rem;
+    top: 0;
 
     opacity: .5;
   }
@@ -116,8 +201,9 @@
   }
   .adaptiv__search-x {
     position: relative;
-    bottom: 7.5rem;
-    left: 48rem;
+    top: 0rem;
+    right: 10rem;
+
   }
   .adaptiv__links {
     display: flex;
@@ -131,5 +217,11 @@
     color: var(--dark-color);
     text-decoration: none;
     font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  html {
+    font-size: 7px;
   }
 }

@@ -1,9 +1,8 @@
 /* Footer */
 .footer {
-  border-top: 1px solid rgba(255, 255, 255, .05);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
 
   padding-top: 4.8rem;
-
 }
 /* Footer-Top */
 .footer-top {
@@ -12,7 +11,7 @@
 
   margin-bottom: 4.7rem;
 }
-.footer-top__item-arrow {
+.footer-top__arrow-block {
   display: none;
 }
 .footer-top__title {
@@ -67,10 +66,10 @@
   width: 40rem;
 }
 .footer-networks__img {
-  transition: .15s all ease-in-out;
+  transition: 0.15s all ease-in-out;
 }
 .footer-networks__img:hover {
-  opacity: .9;
+  opacity: 0.9;
 }
 .footer-networks__item:nth-child(2) {
   display: flex;
@@ -85,7 +84,7 @@
 .footer-networks__box-text {
   color: var(--light-color);
   font-size: 1.4rem;
-  padding-left: .5rem;
+  padding-left: 0.5rem;
 }
 .footer-networks__item:last-child {
   max-width: 20rem;
@@ -104,7 +103,6 @@
 }
 .footer-bottom__content {
   display: flex;
-  
 }
 .footer-bottom__logo-link {
   width: 11.7rem;
@@ -114,7 +112,6 @@
 }
 .footer-bottom__text {
   margin: auto 19.3rem 0 7.3rem;
-  
 
   font-size: 1.4rem;
   color: var(--light-color);
@@ -124,7 +121,8 @@
   display: flex;
   align-items: center;
 }
-.footer-bottom__box-left, .footer-bottom__box-right {
+.footer-bottom__box-left,
+.footer-bottom__box-right {
   cursor: pointer;
 }
 .footer-bottom__box-left:hover,
@@ -137,30 +135,33 @@
 
 /* Адаптивка */
 
-@media screen and (min-width: 320px) and (max-width: 768px) {
-  
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+  .footer-container {
+    max-width: none;
+    width: 100%;
+  }
+
   .footer-top {
     display: grid;
     grid-template-columns: 1fr;
+    padding: 0;
   }
   .footer-top__item {
-    position: relative;
-
     margin-top: 3rem;
-    padding-bottom: 3rem;
+    padding: 0 3rem 3rem 3rem;
     border-bottom: 1px solid #424242;
   }
-  .footer-top__item-arrow {
+  .footer-top__arrow-block {
     position: relative;
     top: 4.3rem;
     right: 2rem;
     display: flex;
     justify-content: end;
+  }
+  .footer-top__arrow {
     color: var(--light-color);
     font-size: 3rem;
-
-    transition: .3s;
-
+    transition: 0.3s;
   }
   .rotate {
     transform: rotate(90deg);
@@ -242,5 +243,22 @@
 
     margin-bottom: 7rem;
     order: 1;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-top__arrow-block {
+    display: none;
+  }
+  .footer-top__ul {
+    display: flex;
+  }
+  .footer-networks__img {
+    width: 7rem;
+    height: 7rem;
   }
 }
