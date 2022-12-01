@@ -12,6 +12,9 @@
 
   margin-bottom: 4.7rem;
 }
+.footer-top__item-arrow {
+  display: none;
+}
 .footer-top__title {
   margin-bottom: 3.2rem;
 
@@ -121,6 +124,123 @@
   display: flex;
   align-items: center;
 }
+.footer-bottom__box-left, .footer-bottom__box-right {
+  cursor: pointer;
+}
+.footer-bottom__box-left:hover,
+.footer-bottom__box-right:hover {
+  opacity: 0.8;
+}
 .footer-bottom__box-left {
   margin-right: 2rem;
+}
+
+/* Адаптивка */
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  
+  .footer-top {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .footer-top__item {
+    position: relative;
+
+    margin-top: 3rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid #424242;
+  }
+  .footer-top__item-arrow {
+    position: relative;
+    top: 4.3rem;
+    right: 2rem;
+    display: flex;
+    justify-content: end;
+    color: var(--light-color);
+    font-size: 3rem;
+
+    transition: .3s;
+
+  }
+  .rotate {
+    transform: rotate(90deg);
+  }
+
+  .footer-top__title {
+    font-size: 4rem;
+  }
+  .footer-top__ul {
+    display: none;
+  }
+  .visible {
+    display: inline-block;
+  }
+  .footer-top__link {
+    font-size: 3rem;
+    line-height: 250%;
+  }
+  .footer-top__li:last-child {
+    margin-bottom: 2rem;
+  }
+  /* VISIBLE */
+
+  /* Footer-Networks */
+  .footer-networks {
+    border-top: none;
+    border-bottom: none;
+  }
+  .footer-networks__content {
+    flex-direction: column;
+    height: 25rem;
+  }
+  .footer-networks__item:first-child {
+    width: auto;
+  }
+  .footer-networks__item:nth-child(2) {
+    margin-top: 5rem;
+    justify-content: space-around;
+  }
+  .footer-networks__item:last-child {
+    display: flex;
+    justify-content: center;
+
+    max-width: 40rem;
+    margin: 2rem auto;
+  }
+  .footer-networks__box-text {
+    font-size: 3rem;
+  }
+  .footer-networks__another-link {
+    text-align: center;
+    font-size: 3rem;
+  }
+  .footer-bottom__content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .footer-bottom__logo-link {
+    flex-basis: 50%;
+
+    order: 2;
+  }
+  .footer-bottom__logo {
+    width: auto;
+  }
+  .footer-bottom__text {
+    text-align: end;
+
+    flex-basis: 50%;
+    margin: 0;
+
+    font-size: 3rem;
+    order: 3;
+  }
+  .footer-bottom__box {
+    flex-basis: 100%;
+    justify-content: center;
+
+    margin-bottom: 7rem;
+    order: 1;
+  }
 }

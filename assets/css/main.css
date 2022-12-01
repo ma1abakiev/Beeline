@@ -5,11 +5,11 @@
 }
 .intro__content {
   padding-top: 12.8rem;
-  padding-bottom: 5rem;
+  padding-bottom: 10rem;
   background-image: url(../img/intro_banner.png);
   background-repeat: no-repeat;
-  background-position: left 45rem top 5rem;
-  background-size: contain;
+  background-position: left 48rem top 12rem;
+  background-size: 70rem;
 }
 .intro__title {
   margin-top: 12rem;
@@ -48,18 +48,22 @@
   margin-right: 2.5rem;
 }
 .intro__connect {
-  margin-right: 1rem;
-
   color: var(--light-color);
   font-size: 2rem;
   font-weight: 700;
   line-height: 130%;
   cursor: pointer;
 }
+.intro__img-link {
+  margin-left: 1rem;
+}
+.intro__img {
+  vertical-align: middle;
+}
 
 /* Tarif */
 .tarif {
-  margin-top: 11rem;
+  margin-top: 5rem;
 }
 
 .tarif__container {
@@ -71,6 +75,7 @@
   justify-content: center;
 
   max-width: 90%;
+  margin: 0 auto;
 }
 .tarif__title {
   text-align: center;
@@ -360,5 +365,224 @@
   position: absolute;
   top: 0;
   left: -20px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  /* Временно */
+  
+
+  /* Настраиваю блоки */
+
+  /* Intro */
+  .intro__content {
+    padding-top: 35rem;
+
+    background-position: top 10rem center;
+  }
+  .intro__title {
+    margin-top: 30rem;
+    font-size: 6rem;
+    line-height: 150%;
+  }
+  .intro__subtitle {
+    font-size: 3.5rem;
+    max-width: none;
+  }
+  .intro__box {
+    display: flex;
+    flex-direction: column;
+  }
+  .intro__btn {
+    margin-right: 0;
+    padding: 0;
+
+    width: 100%;
+    height: 10rem;
+
+    border-radius: 3rem;
+    font-size: 3.5rem;
+  }
+  .intro__connect {
+    margin-top: 3rem;
+    font-size: 3rem;
+  }
+
+  /* Tarif */
+
+  .tarif__container {
+    max-width: none;
+  }
+  .tarif__title {
+    text-align: start;
+
+    font-size: 5rem;
+  }
+  .tarif__items {
+    grid-template-columns: 1fr;
+  }
+  .tarif__item {
+    padding: 2rem;
+    height: auto;
+  }
+
+  .tarif__item-top {
+    height: auto;
+  }
+  .tarif__item-top > img {
+    width: 15rem;
+    height: 15rem;
+  }
+  .tarif__top-title {
+    font-size: 3rem;
+  }
+  .tarif__price {
+    font-size: 4.5rem;
+  }
+  .tarif__price > span {
+    font-size: 3.5rem;
+  }
+  .tarif__line {
+    font-size: 3rem;
+  }
+  .tarif__params {
+    height: auto;
+  }
+  .tarif__params-title {
+    font-size: 3.2rem;
+  }
+  .tarif__param {
+    font-size: 3rem;
+  }
+  .tarif__param > span {
+    font-size: 2.5rem;
+  }
+  .tarif__btn {
+    margin-top: 2rem;
+  }
+  .tarif__link {
+    margin-left: 0;
+
+    font-size: 3rem;
+  }
+  .tarif__box-top {
+    grid-template-columns: 1fr;
+    border-bottom: none;
+  }
+  .tarif__box-left {
+    padding-bottom: 1rem ;
+    border-bottom: 1px solid #3c2f78;
+  }
+  .tarif__box-img {
+    width: 12rem;
+    height: 12rem;
+  }
+  .tarif__box-title {
+    font-size: 3.5rem;
+  }
+  .tarif__right-title {
+    margin-top: 3rem;
+  }
+  .tarif__box-bottom {
+    grid-template-columns: 1fr;
+  }
+  .tarif__box-link {
+    order: 2;
+  }
+  .tarif__box-btn {
+    width: 100%;
+    max-width: none;
+
+    margin-right: 0;
+    order: 1;
+  }
+  /* Mobile */
+  .mobile__container {
+    max-width: none;
+  }
+  .mobile__content {
+    display: flex;
+    flex-direction: column;
+
+    background-position: center;
+  }
+  .mobile__left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mobile__title {
+    display: none;
+  }
+  .mobile__subtitle {
+    display: none;
+  }
+  .mobile__adaptiv-title {
+    display: inline-block;
+
+    font-size: 4.8rem;
+    line-height: 150%;
+  }
+  .mobile__adaptiv-subtitle {
+    display: inline-block;
+
+    margin-top: 1.5rem;
+
+    font-size: 3.1rem;
+  }
+  
+  .mobile__img {
+    position: static;
+
+    width: 50rem;
+    margin-top: 2rem;
+  }
+  /*  */
+  .mobile__link-box {
+    padding-bottom: 4rem;
+
+    max-width: none;
+
+    border-bottom: 1px solid #3c2f78;
+  }
+  .mobile__link-img {
+    width: 27rem;
+  }
+  .mobile__text {
+    margin-top: 4rem;
+
+    font-size: 2.7rem;
+    line-height: 150%;
+  }
+  .mobile__btn {
+    text-align: start;
+    margin-top: 4rem;
+    padding-left: 5rem;
+
+    height: 15rem;
+  }
+  /* Advantages */
+  .advantages {
+    margin-top: 8rem;
+  }
+  .advantages__content {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .advantages__item {
+    align-items: center;
+  }
+  .advantages__item:nth-child(5) {
+    margin-left: 0;
+  }
+  .advantages__text {
+    font-size: 3rem;
+  }
+  /* IVI */
+  .ivi-star {
+    font-size: 2.8rem;
+    margin-left: 2rem ;
+
+    margin-bottom: 15rem;
+  }
 }
 

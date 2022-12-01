@@ -1,3 +1,10 @@
+/* Mob */
+.mob {
+  display: none;
+}
+
+
+/*  */
 .header{
   position: fixed;
   top: 0;
@@ -10,8 +17,12 @@
 
   /* background-color: transparent; */
   background-color: unset;
-}
 
+  transition: .8s;
+}
+.header_active {
+  background-color: var(--second-color);
+}
 .header__content{
   display: flex;
   flex-direction: column;
@@ -103,6 +114,56 @@
 }
 .header-bottom__search-btn{
   margin-right: 4.2rem;
+  
   background-color:unset;
   border: none;
+  cursor: pointer;
+}
+
+/* Адаптивка */
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  /* Отключаю блоки */
+  .header-top {
+    display: none;
+  }
+  .header-bottom__nav {
+    display: none;
+  }
+  .header-bottom__search-btn {
+    display: none;
+  }
+  
+  /* Настраиваю бургер меню */
+  .mob {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 3.5rem;
+  }
+  .mob__item {
+    width: 4.5rem;
+    height: .5rem;
+    background-color: var(--dark-color);
+  }
+  /* Изменяю нынешний код */
+
+  /* Header */
+  .header {
+    box-shadow: 0 2px 4px rgb(0 0 0 / 12%);
+  }
+  .header-bottom__content {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 3rem 0;
+  }
+  .header-bottom__left {
+    position: relative;
+    top: 0;
+    left: 2rem;
+  }
+  .header-bottom__logo-link {
+    margin-right: 0;
+  }
+
 }

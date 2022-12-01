@@ -8,6 +8,118 @@
     <title>Document</title>
   </head>
   <body>
+    <!-- Adaptiv -->
+    <section class="adaptiv">
+      <div class="container">
+        <div class="adaptiv__content">
+          <div class="adaptiv__header">
+            <div class="adaptiv__header-x">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6 6L18 18"
+                  stroke="#909090"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M18 6L6 18"
+                  stroke="#909090"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+            </div>
+            <div class="adaptiv__lang">
+              <button id="ru">Рус</button>
+              <span>/</span>
+              <button id="ky">Кырг</button>
+            </div>
+          </div>
+          <div class="adaptiv__top">
+            <h3 class="adaptiv__title">Частным лицам</h3>
+            <h3 class="adaptiv__title">Бизнесу</h3>
+          </div>
+          <div class="adaptiv__search-bar">
+            <div class="adaptiv__search-box">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="11"
+                  cy="11"
+                  r="8.25"
+                  stroke="#121212"
+                  stroke-width="1.5"
+                ></circle>
+                <path
+                  d="M22 22L17.156 17.156"
+                  stroke="#121212"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                ></path>
+              </svg>
+            </div>
+            <input
+              type="text"
+              name="query"
+              autocomplete="false"
+              placeholder="Поиск по сайту"
+              class="adaptiv__search"
+            />
+            <div class="adaptiv__search-x">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6 6L18 18"
+                  stroke="#909090"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M18 6L6 18"
+                  stroke="#909090"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+            </div>
+          </div>
+          <div class="adaptiv__links">
+            <a href="#" class="adaptiv__link">Помощь</a
+            ><a href="#" class="adaptiv__link">Карта офисов</a
+            ><a href="#" class="adaptiv__link">Акции и новости</a
+            ><a href="#" class="adaptiv__link">Смартфоны</a
+            ><a href="#" class="adaptiv__link">Перейти в Beeline</a
+            ><a href="#" class="adaptiv__link">Тарифы</a
+            ><a href="#" class="adaptiv__link">Услуги</a
+            ><a href="#" class="adaptiv__link">Пополнение</a
+            ><a href="#" class="adaptiv__link">О компании</a
+            ><a href="#" class="adaptiv__link">Карьера в Beeline</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+
     <div class="page">
       <!-- Header -->
       <header class="header">
@@ -48,6 +160,11 @@
           <section class="header-bottom">
             <div class="container">
               <div class="header-bottom__content">
+                <div class="mob">
+                  <div class="mob__item"></div>
+                  <div class="mob__item"></div>
+                  <div class="mob__item"></div>
+                </div>
                 <div class="header-bottom__left">
                   <a href="#" class="header-bottom__logo-link"
                     ><img
@@ -102,7 +219,7 @@
       <main class="main">
         <!-- Intro -->
         <section class="intro">
-          <div class="container">
+          <div class="container intro-container">
             <div class="intro__content">
               <h2 class="intro__title">Онлайн-кинотеатр ИВИ</h2>
               <p class="intro__subtitle">
@@ -111,8 +228,14 @@
               </p>
               <div class="intro__box">
                 <button class="intro__btn">Бесплатно на 14 дней</button>
-                <span class="intro__connect">Как подключить? </span>
-                <img src="./assets/img/play.svg" alt="" class="intro__img" />
+                <span class="intro__connect"
+                  >Как подключить?
+                  <a href="#" class="intro__img-link"
+                    ><img
+                      src="./assets/img/play.svg"
+                      alt=""
+                      class="intro__img" /></a
+                ></span>
               </div>
             </div>
           </div>
@@ -258,7 +381,7 @@
                       </div>
                     </div>
                     <div class="tarif__box-right">
-                      <p class="tarif__params-title">
+                      <p class="tarif__params-title tarif__right-title">
                         Активируйте ИВИ в Мой Beeline
                       </p>
                       <strong class="tarif__param"
@@ -273,7 +396,9 @@
                   </div>
 
                   <div class="tarif__box-bottom">
-                    <a href="#" class="tarif__link">Заказать SIM-карту </a>
+                    <a href="#" class="tarif__link tarif__box-link"
+                      >Заказать SIM-карту
+                    </a>
                     <button class="btn tarif__btn tarif__box-btn">
                       Подключить
                     </button>
@@ -289,6 +414,14 @@
             <div class="mobile__container">
               <div class="mobile__content">
                 <div class="mobile__left">
+                  <div class="mobile__left-adaptiv">
+                    <h3 class="mobile__title mobile__adaptiv-title">
+                      Скачивайте приложение Мой Beeline
+                    </h3>
+                    <p class="mobile__subtitle mobile__adaptiv-subtitle">
+                      и получайте неограниченный доступ к миру кино и сериалов!
+                    </p>
+                  </div>
                   <img
                     src="./assets/img/iphone.png"
                     alt=""
@@ -342,7 +475,7 @@
               <ul class="advantages__content">
                 <li class="advantages__item">
                   <img
-                    src="./assets/img/present.svg"
+                    src="./assets/img/advantages/present.svg"
                     alt=""
                     class="advantages__img"
                   /><span class="advantages__text"
@@ -351,14 +484,14 @@
                 </li>
                 <li class="advantages__item">
                   <img
-                    src="./assets/img/medal.svg"
+                    src="./assets/img/advantages/medal.svg"
                     alt=""
                     class="advantages__img"
                   /><span class="advantages__text">Награды за действия</span>
                 </li>
                 <li class="advantages__item">
                   <img
-                    src="./assets/img/percent.svg"
+                    src="./assets/img/advantages/percent.svg"
                     alt=""
                     class="advantages__img"
                   /><span class="advantages__text"
@@ -367,7 +500,7 @@
                 </li>
                 <li class="advantages__item">
                   <img
-                    src="./assets/img/phone.svg"
+                    src="./assets/img/advantages/phone.svg"
                     alt=""
                     class="advantages__img"
                   /><span class="advantages__text"
@@ -377,7 +510,7 @@
                 </li>
                 <li class="advantages__item">
                   <img
-                    src="./assets/img/help.svg"
+                    src="./assets/img/advantages/help.svg"
                     alt=""
                     class="advantages__img"
                   /><span class="advantages__text"
@@ -388,24 +521,28 @@
             </div>
           </div>
         </section>
-        <div class="mobile__container">
-          <p class="ivi-star">
-            Просмотр кино и сериалов доступен на безлимитной основе. Интернет
-            трафик тарифицируется согласно условий тарифного плана Бирге для
-            интернета и Бирге для интрнета Pro. Под словом «навсегда»
-            подразумевается бесплатный и безлимитный доступ к подписке
-            онлайн-кинотеатра ИВИ при выполнении всех условий тарифных планов
-            Бирге для Интернета и Бирге для Интернета PRO в период существования
-            указанных тарифов. Пользовательское соглашение Сервиса ИВИ.
-          </p>
-        </div>
+        <section>
+          <div class="container mobile__container">
+            <p class="ivi-star">
+              Просмотр кино и сериалов доступен на безлимитной основе. Интернет
+              трафик тарифицируется согласно условий тарифного плана Бирге для
+              интернета и Бирге для интрнета Pro. Под словом «навсегда»
+              подразумевается бесплатный и безлимитный доступ к подписке
+              онлайн-кинотеатра ИВИ при выполнении всех условий тарифных планов
+              Бирге для Интернета и Бирге для Интернета PRO в период
+              существования указанных тарифов. Пользовательское соглашение
+              Сервиса ИВИ.
+            </p>
+          </div>
+        </section>
       </main>
       <footer class="footer">
-        <div class="container">
+        <div class="container footer-container">
           <div class="footer__content">
             <!-- Footer-Top -->
             <section class="footer-top">
               <div class="footer-top__item">
+                <div class="footer-top__item-arrow">></div>
                 <h4 class="footer-top__title">Частным лицам</h4>
                 <ul class="footer-top__ul">
                   <li class="footer-top__li">
@@ -434,6 +571,8 @@
                 </ul>
               </div>
               <div class="footer-top__item">
+                <div class="footer-top__item-arrow">></div>
+
                 <h4 class="footer-top__title">Бизнес</h4>
 
                 <ul class="footer-top__ul">
@@ -454,6 +593,8 @@
                 </ul>
               </div>
               <div class="footer-top__item">
+                <div class="footer-top__item-arrow">></div>
+
                 <h4 class="footer-top__title">Компания</h4>
 
                 <ul class="footer-top__ul">
@@ -493,6 +634,8 @@
               </div>
 
               <div class="footer-top__item">
+                <div class="footer-top__item-arrow">></div>
+
                 <h4 class="footer-top__title">Поддержка</h4>
 
                 <ul class="footer-top__ul">
@@ -625,5 +768,12 @@
         </div>
       </footer>
     </div>
+    <section class="help">
+      <img src="./assets/img/help.svg" alt="" class="help__img" />
+    </section>
+
+    <script src="./assets/js/jquery-3.6.1.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <!-- <script src="./assets/js/app.js"></script> -->
   </body>
 </html>
