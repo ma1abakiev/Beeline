@@ -214,6 +214,8 @@
     display: flex;
     flex-direction: column;
 
+    height: 60vh;
+
     overflow-y: scroll;
   }
   .adaptiv__link {
@@ -224,6 +226,37 @@
     color: var(--dark-color);
     text-decoration: none;
     font-size: 3rem;
+  }
+  .adaptiv__link_active {
+    display: flex;
+    justify-content: space-between;
+  }
+  .adaptiv__link-line {
+    display: inline-block;
+
+    transition: .3s;
+    margin-right: 7rem;
+
+    transform: rotate(0deg);
+  }
+  .adaptiv__link-line_active {
+    transform: rotate(90deg);
+  }
+  .adaptiv__list {
+    display: flex;
+    flex-direction: column;
+    
+    padding-top: 2rem;
+
+  }
+  .adaptiv__list-item {
+    padding-top: 3rem;
+
+    font-size: 2.5rem;
+
+  }
+  .adaptiv__list-item:hover {
+    color: var(--primary-color);
   }
 }
 
