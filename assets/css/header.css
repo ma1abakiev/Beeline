@@ -67,8 +67,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  /* height: 8rem; */
 }
 .header-bottom__left{
   display: flex;
